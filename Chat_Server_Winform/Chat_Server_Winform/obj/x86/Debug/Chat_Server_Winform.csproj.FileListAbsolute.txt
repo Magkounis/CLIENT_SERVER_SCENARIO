@@ -1,0 +1,7 @@
+C:\Users\Administrator\Documents\Visual Studio 2010\Projects\CLIENT_SERVER_SCENARIO\Chat_Server_Winform\Chat_Server_Winform\obj\x86\Debug\Chat_Server_Winform.Form1.resources
+C:\Users\Administrator\Documents\Visual Studio 2010\Projects\CLIENT_SERVER_SCENARIO\Chat_Server_Winform\Chat_Server_Winform\obj\x86\Debug\Chat_Server_Winform.Properties.Resources.resources
+C:\Users\Administrator\Documents\Visual Studio 2010\Projects\CLIENT_SERVER_SCENARIO\Chat_Server_Winform\Chat_Server_Winform\obj\x86\Debug\Chat_Server_Winform.csproj.GenerateResource.Cache
+C:\Users\Administrator\Documents\Visual Studio 2010\Projects\CLIENT_SERVER_SCENARIO\Chat_Server_Winform\Chat_Server_Winform\bin\Debug\Chat_Server_Winform.exe
+C:\Users\Administrator\Documents\Visual Studio 2010\Projects\CLIENT_SERVER_SCENARIO\Chat_Server_Winform\Chat_Server_Winform\bin\Debug\Chat_Server_Winform.pdb
+C:\Users\Administrator\Documents\Visual Studio 2010\Projects\CLIENT_SERVER_SCENARIO\Chat_Server_Winform\Chat_Server_Winform\obj\x86\Debug\Chat_Server_Winform.exe
+C:\Users\Administrator\Documents\Visual Studio 2010\Projects\CLIENT_SERVER_SCENARIO\Chat_Server_Winform\Chat_Server_Winform\obj\x86\Debug\Chat_Server_Winform.pdb
