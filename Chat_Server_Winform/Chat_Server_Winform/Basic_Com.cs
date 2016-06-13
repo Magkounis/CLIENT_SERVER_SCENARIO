@@ -17,15 +17,16 @@ namespace Chat_Server_Winform
           }
        Socket srvsocket = null;
        Thread Basicthread = null;
-       NetworkStream serverns,receivens,sendns = null;
+       NetworkStream serverns,receivens,sendns = null;//init network streams
+       bool stop = false;//need a delegate at this stage
+
        
-       
 
 
 
 
 
-       private void initsocket()
+       private void initsocket()//initialize the thread for the socket
        {
            Basicthread = new Thread(startlistening);
            Basicthread.Start();
@@ -70,8 +71,9 @@ namespace Chat_Server_Winform
        private void startlistening()//part where it starts listening for pending connections
        {
           initliseningsocket(10);
-          while (true)
+          while (!stop)
           {
+              srvsocket.Accept();
           }
        }
 
