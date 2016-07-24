@@ -5,11 +5,16 @@ using System.Text;
 
 namespace Chat_Server_Winform
 {
-    class Parameters
+  public  class Parameters
     {
         public Parameters()
         {
-
+            mode = "";
+            endpointhostname = null;
+            localpointhostname = "";
+            endpointip = "";
+            localpointip = "";
+            port = 0;
         }
             public string mode{get;set;}
             public string endpointhostname { get; set; }

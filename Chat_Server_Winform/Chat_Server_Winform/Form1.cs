@@ -25,9 +25,19 @@ namespace Chat_Server_Winform
         {
             p = new Parameters();
             BS = new Basic_Com(p);//pass the instance of class parameters
-            string ip=p.endpointhostname;
+
+            if (string.IsNullOrWhiteSpace(p.endpointhostname))//check if string is null or empty
+            {
+
+                p.localpointhostname = BS.getlocalhostname();
+            }
+            if (string.IsNullOrWhiteSpace(p.endpointip))
+            {string ip = p.localpointip;
+             BS.getipfromhostname(p.localpointhostname, ref ip);
+             p.localpointip=ip;
+            }
+            Info.Text = p.localpointhostname + "," + p.localpointip;
            
-            BS.getipfromhostname("SRV",ref ip);
         }
     }
 }

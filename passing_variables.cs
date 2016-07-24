@@ -28,7 +28,7 @@ public void DoSomething() { if(c) System.Diagnostics.Debug.WriteLine(c.Value); }
 private C c;
 }
 
-
+(string.IsNullOrWhiteSpace(p.endpointhostname))//check if string is null or empty
 
 C c = new C();
 A a = new A(c);

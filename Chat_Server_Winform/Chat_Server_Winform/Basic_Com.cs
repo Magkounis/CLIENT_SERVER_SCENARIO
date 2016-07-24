@@ -86,7 +86,21 @@ namespace Chat_Server_Winform
 
        }
 
+       public string getlocalhostname()//gets the host name in local system
+       {
+           string host;
+           try
+           {
+              host= Dns.GetHostName().ToString();
 
+           }
+           catch (Exception e)
+           {
+               return "Local Hostname not found";
+           }
+
+           return host;
+       }
        
 
 
