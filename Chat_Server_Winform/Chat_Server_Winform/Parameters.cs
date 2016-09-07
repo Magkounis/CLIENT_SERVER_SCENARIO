@@ -7,7 +7,7 @@ namespace Chat_Server_Winform
 {
   public  class Parameters
     {
-        public Parameters()
+        public Parameters()//i can read these in a config.xml file
         {
             mode = "";
             endpointhostname = null;
