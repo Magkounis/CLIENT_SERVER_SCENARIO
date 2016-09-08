@@ -6,24 +6,25 @@ using System.Drawing;
 using System.Linq;
 using System.Text;
 using System.Windows.Forms;
-using NetworksApi.TCP;
+using NetworksApi.TCP.SERVER;
 
 namespace Chat_Server_Winform
 {
     public partial class Form1 : Form
     {
-
+        
 
         public Form1()
         {
             InitializeComponent();
             
         }
-
+        Server srv = null;
         Basic_Com BS = null;
         Parameters p = null;
+        
         private void Form1_Load(object sender, EventArgs e)
-        {
+        {   
             p = new Parameters();
             BS = new Basic_Com(p);//pass the instance of class parameters
 
@@ -38,7 +39,15 @@ namespace Chat_Server_Winform
              p.localpointip=ip;
             }
             Info.Text = p.localpointhostname + "," + p.localpointip;
+            srv = new Server(p.localpointip,p.port.ToString());//start new server using the local ip and port from 
+            //an xml file
+            srv.OnClientConnected += new OnConnectedDelegate(srv_OnClientConnected);
            
+        }
+
+        void srv_OnClientConnected(object Sender, ConnectedArguments R)
+        {
+            throw new NotImplementedException();
         }
     }
 }
