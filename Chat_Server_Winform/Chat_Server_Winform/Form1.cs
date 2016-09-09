@@ -10,6 +10,7 @@ using NetworksApi.TCP.SERVER;
 
 namespace Chat_Server_Winform
 {
+    public delegate void UpdateChat(string state);
     public partial class Form1 : Form
     {
         
@@ -28,6 +29,9 @@ namespace Chat_Server_Winform
             p = new Parameters();
             BS = new Basic_Com(p);//pass the instance of class parameters
 
+            
+            
+
             if (string.IsNullOrWhiteSpace(p.endpointhostname))//check if string is null or empty
             {
 
@@ -41,13 +45,68 @@ namespace Chat_Server_Winform
             Info.Text = p.localpointhostname + "," + p.localpointip;
             srv = new Server(p.localpointip,p.port.ToString());//start new server using the local ip and port from 
             //an xml file
+            //create the events for events handling server
             srv.OnClientConnected += new OnConnectedDelegate(srv_OnClientConnected);
+            srv.OnClientDisconnected += new OnDisconnectedDelegate(srv_OnClientDisconnected);
+            srv.OnDataReceived += new OnReceivedDelegate(srv_OnDataReceived);
+            srv.OnServerError += new OnErrorDelegate(srv_OnServerError);
+            
+            
            
+        }
+
+        private void Chat(string state)
+        {
+            if (label1.InvokeRequired)
+            {
+                Invoke(new UpdateChat(Chat), new object[] { state });
+            }
+            else
+            {
+                label1.Text += "\n" + label1.Text;
+            }
+            
+        }
+
+
+        void srv_OnServerError(object Sender, ErrorArguments R)
+        {
+            MessageBox.Show(R.ErrorMessage);
+            MessageBox.Show(R.Exception);
+        }
+
+        void srv_OnDataReceived(object Sender, ReceivedArguments R)
+        {
+            Chat(R.ReceivedData);
+            srv.BroadCast(R.Name + "Λέει :" + R.ReceivedData);
+            
+        }
+
+        void srv_OnClientDisconnected(object Sender, DisconnectedArguments R)
+        {
+            throw new NotImplementedException();
         }
 
         void srv_OnClientConnected(object Sender, ConnectedArguments R)
         {
             throw new NotImplementedException();
         }
+
+        private void Form1_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            System.Environment.Exit(System.Environment.ExitCode);
+            //close everything when it closes
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+           
+                srv.Start();
+                button1.Text = "Started";
+                button1.Enabled = false;
+           
+        }
+
+       
     }
 }
