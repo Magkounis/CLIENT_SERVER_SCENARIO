@@ -1,0 +1,8 @@
+<note>
+  <serverip>192.168.1.26</serverip>
+  <database>test</database>
+  <dbuser>sa</dbuser>
+  <password>1234</password>
+  <name>Nick2</name>
+  <port>90</port>
+</note>

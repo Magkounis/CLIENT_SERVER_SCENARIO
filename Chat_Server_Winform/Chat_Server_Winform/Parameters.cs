@@ -14,7 +14,7 @@ namespace Chat_Server_Winform
             localpointhostname = "";
             endpointip = "";
             localpointip = "";
-            port = 0;
+            port = 90;
         }
             public string mode{get;set;}
             public string endpointhostname { get; set; }

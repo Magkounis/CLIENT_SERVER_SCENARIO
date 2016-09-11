@@ -43,6 +43,7 @@ namespace Chat_Server_Winform
              p.localpointip=ip;
             }
             Info.Text = p.localpointhostname + "," + p.localpointip;
+            
             srv = new Server(p.localpointip,p.port.ToString());//start new server using the local ip and port from 
             //an xml file
             //create the events for events handling server
@@ -63,7 +64,7 @@ namespace Chat_Server_Winform
             }
             else
             {
-                label1.Text += "\n" + label1.Text;
+                label1.Text += "\n" + state;
             }
             
         }
@@ -84,12 +85,12 @@ namespace Chat_Server_Winform
 
         void srv_OnClientDisconnected(object Sender, DisconnectedArguments R)
         {
-            throw new NotImplementedException();
+            Chat("\n" + R.Name + "Disconnected");
         }
 
         void srv_OnClientConnected(object Sender, ConnectedArguments R)
         {
-            throw new NotImplementedException();
+            Chat("\n" + R.Name + "Connected");
         }
 
         private void Form1_FormClosing(object sender, FormClosingEventArgs e)

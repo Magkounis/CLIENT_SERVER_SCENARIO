@@ -1,0 +1,3 @@
+git stash save "Changes I don't want to commit yet"
+git pull
+git stash pop
