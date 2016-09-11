@@ -7,3 +7,12 @@ C:\Users\Administrator\Documents\Visual Studio 2010\Projects\CLIENT_SERVER_SCENA
 C:\Users\Administrator\Documents\Visual Studio 2010\Projects\CLIENT_SERVER_SCENARIO\Chat_Server_Winform\Chat_Server_Winform\obj\x86\Release\Chat_Server_Winform.pdb
 C:\Users\Administrator\Documents\Visual Studio 2010\Projects\CLIENT_SERVER_SCENARIO\Chat_Server_Winform\Chat_Server_Winform\bin\Release\NetworksApi.dll
 C:\Users\Administrator\Documents\Visual Studio 2010\Projects\CLIENT_SERVER_SCENARIO\Chat_Server_Winform\Chat_Server_Winform\obj\x86\Release\Chat_Server_Winform.csprojResolveAssemblyReference.cache
+C:\Users\nick\Documents\Visual Studio 2010\Projects\CLIENT_SERVER_SCENARIO\Chat_Server_Winform\Chat_Server_Winform\obj\x86\Release\Chat_Server_Winform.exe
+C:\Users\nick\Documents\Visual Studio 2010\Projects\CLIENT_SERVER_SCENARIO\Chat_Server_Winform\Chat_Server_Winform\obj\x86\Release\Chat_Server_Winform.pdb
+C:\Users\nick\Documents\Visual Studio 2010\Projects\CLIENT_SERVER_SCENARIO\Chat_Server_Winform\Chat_Server_Winform\bin\Release\Chat_Server_Winform.exe
+C:\Users\nick\Documents\Visual Studio 2010\Projects\CLIENT_SERVER_SCENARIO\Chat_Server_Winform\Chat_Server_Winform\bin\Release\Chat_Server_Winform.pdb
+C:\Users\nick\Documents\Visual Studio 2010\Projects\CLIENT_SERVER_SCENARIO\Chat_Server_Winform\Chat_Server_Winform\bin\Release\NetworksApi.dll
+C:\Users\nick\Documents\Visual Studio 2010\Projects\CLIENT_SERVER_SCENARIO\Chat_Server_Winform\Chat_Server_Winform\obj\x86\Release\Chat_Server_Winform.csprojResolveAssemblyReference.cache
+C:\Users\nick\Documents\Visual Studio 2010\Projects\CLIENT_SERVER_SCENARIO\Chat_Server_Winform\Chat_Server_Winform\obj\x86\Release\Chat_Server_Winform.Form1.resources
+C:\Users\nick\Documents\Visual Studio 2010\Projects\CLIENT_SERVER_SCENARIO\Chat_Server_Winform\Chat_Server_Winform\obj\x86\Release\Chat_Server_Winform.Properties.Resources.resources
+C:\Users\nick\Documents\Visual Studio 2010\Projects\CLIENT_SERVER_SCENARIO\Chat_Server_Winform\Chat_Server_Winform\obj\x86\Release\Chat_Server_Winform.csproj.GenerateResource.Cache
